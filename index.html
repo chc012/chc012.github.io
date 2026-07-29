@@ -40,13 +40,21 @@
     transition: color 150ms ease, text-decoration-color 150ms ease;
   }
   a:hover {
-    color: #000;
-    text-decoration-color: #333;
+    filter: brightness(0.8);
   }
   a:focus-visible {
     outline: 2px solid #999;
     outline-offset: 2px;
   }
+  .link-uniphore { color: #0e6d77; text-decoration-color: #0e6d77; }
+  .link-orby     { color: #003f88; text-decoration-color: #003f88; }
+  .link-stanford { color: #8c1515; text-decoration-color: #8c1515; }
+  .link-ucsd     { color: #00629b; text-decoration-color: #00629b; }
+  .link-scholar  { color: #4885ed; text-decoration-color: #4885ed; }
+  .link-linkedin { color: #0a66c2; text-decoration-color: #0a66c2; }
+  .link-github   { color: #181717; text-decoration-color: #181717; }
+  .link-art      { color: #e61919; text-decoration-color: #e61919; }
+  .link-medium   { color: #000000; text-decoration-color: #000000; }
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -83,33 +91,33 @@
 
 <p>
   I work on AI research and engineering at
-  <a href="https://www.uniphore.com">Uniphore</a>, trying
+  <a class="link-uniphore" href="https://www.uniphore.com">Uniphore</a>, trying
   to make models do computer tasks for us and faithfully
   evaluate how it does. Before that, I worked at
-  <a href="https://www.uniphore.com/orby-ai/">Orby AI</a>.
+  <a class="link-orby" href="https://www.uniphore.com/orby-ai/">Orby AI</a>.
 </p>
 
 <p>
   I earned my MS in Computational and Mathematical
-  Engineering at <a href="https://www.stanford.edu">Stanford University</a>.
+  Engineering at <a class="link-stanford" href="https://www.stanford.edu">Stanford University</a>.
   Prior to that, I earned a BS in Cognitive Science and a BA in
-  Philosophy at <a href="https://www.ucsd.edu">UC San Diego</a>.
+  Philosophy at <a class="link-ucsd" href="https://www.ucsd.edu">UC San Diego</a>.
 </p>
 
 <p>
   You can find a list of my research publications on
-  <a href="https://scholar.google.com/citations?user=ZBMtZaUAAAAJ&hl=en">Google Scholar</a>.
+  <a class="link-scholar" href="https://scholar.google.com/citations?user=ZBMtZaUAAAAJ&hl=en">Google Scholar</a>.
   Here is my <a href="cv_cheng_chang_20260603.pdf">CV</a>,
   <a href="resume_cheng_chang_20260603.pdf">resume</a>,
-  <a href="https://www.linkedin.com/in/chc012">LinkedIn</a>, and
-  <a href="https://github.com/chc012">GitHub</a>.
+  <a class="link-linkedin" href="https://www.linkedin.com/in/chc012">LinkedIn</a>, and
+  <a class="link-github" href="https://github.com/chc012">GitHub</a>.
   You can also reach me by email at chc012 at alumni.stanford.edu.
 </p>
 
 <p>
   I made a small game,
-  <a href="https://artintimegame.com">Art in Time</a>,
-  and have an empty <a href="https://medium.com/@tony.chang99">Medium</a> page.
+  <a class="link-art" href="https://artintimegame.com">Art in Time</a>,
+  and have an empty <a class="link-medium" href="https://medium.com/@tony.chang99">Medium</a> page.
 </p>
 
 </body>
