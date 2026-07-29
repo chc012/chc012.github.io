@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cheng (Tony) Chang</title>
 <meta name="description" content="Cheng (Tony) Chang">
+<link rel="icon" href="favicon.png">
 <style>
   html {
     color-scheme: light;
@@ -16,8 +17,8 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 1.125rem;
     line-height: 1.7;
-    color: #333;
-    background: #fff;
+    color: #2f3437;
+    background: #fbfbfa;
   }
   h1 {
     font-size: 1.5rem;
@@ -27,42 +28,58 @@
   }
   p {
     margin: 1.25rem 0;
-  }
-  ul {
-    margin: 1.25rem 0;
-    padding-left: 1.4rem;
-  }
-  li {
-    margin: 0.25rem 0;
+    text-wrap: pretty;
+    text-align: justify;
+    text-align-last: left;
   }
   a {
-    color: #333;
+    color: #2f3437;
     text-decoration: underline;
     text-decoration-color: #bbb;
     text-underline-offset: 2px;
+    transition: color 150ms ease, text-decoration-color 150ms ease;
   }
   a:hover {
     color: #000;
     text-decoration-color: #333;
+  }
+  a:focus-visible {
+    outline: 2px solid #999;
+    outline-offset: 2px;
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 2rem;
+    margin-bottom: 1.25rem;
+  }
+  .header h1 {
+    margin: 0 0 0.5rem;
+  }
+  .header p {
+    margin: 0;
   }
   .headshot {
     width: 120px;
     height: 120px;
     border-radius: 8px;
     object-fit: cover;
-    margin-bottom: 1.25rem;
+    border: 1px solid #eaeaea;
+    flex: none;
   }
 </style>
 </head>
 <body>
 
-<img class="headshot" src="headshot.jpeg" alt="Cheng (Tony) Chang">
-
-<h1>Cheng (Tony) Chang</h1>
-
-<p>
-  Hello 👋
-</p>  
+<div class="header">
+  <div>
+    <h1>Cheng (Tony) Chang</h1>
+    <p>Hello 👋</p>
+  </div>
+  <img class="headshot" src="headshot.jpeg" alt="Cheng (Tony) Chang">
+</div>
 
 <p>
   I work on AI research and engineering at
@@ -74,24 +91,18 @@
 
 <p>
   I earned my MS in Computational and Mathematical
-  Engineering at Stanford University. Prior to that, I
-  earned a BS in Cognitive Science and a BA in
-  Philosophy at UC San Diego.
+  Engineering at <a href="https://www.stanford.edu">Stanford University</a>.
+  Prior to that, I earned a BS in Cognitive Science and a BA in
+  Philosophy at <a href="https://www.ucsd.edu">UC San Diego</a>.
 </p>
 
 <p>
   You can find a list of my research publications on
   <a href="https://scholar.google.com/citations?user=ZBMtZaUAAAAJ&hl=en">Google Scholar</a>.
-</p>
-
-<p>
   Here is my <a href="cv_cheng_chang_20260603.pdf">CV</a>,
   <a href="resume_cheng_chang_20260603.pdf">resume</a>,
   <a href="https://www.linkedin.com/in/chc012">LinkedIn</a>, and
   <a href="https://github.com/chc012">GitHub</a>.
-</p>
-
-<p>
   You can also reach me by email at chc012 at alumni.stanford.edu.
 </p>
 
