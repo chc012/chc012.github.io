@@ -21,6 +21,8 @@ The silhouette turned into a short, skinny old man in an oversized raincoat. "Ar
 
 "Same to you," Zosima said. The small man slowly faded back into the silhouette.
 
+* * *
+
 "I've been thinking," Jerry said, as he and Tom walked down a maintenance corridor in the East wing of Xenon Incorporated's Pacific Standard Data Center 3.
 
 "That's new."
