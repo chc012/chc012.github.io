@@ -15,3 +15,7 @@ feed:
 exclude:
   - README.md
   - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
