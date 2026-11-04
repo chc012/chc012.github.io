@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+<link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+{% feed_meta %}
+<style>
+  html {
+    color-scheme: light;
+  }
+  body {
+    max-width: 640px;
+    margin: 10vh auto 10vh;
+    padding: 0 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #2f3437;
+    background: #fbfbfa;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 0.5rem;
+    color: #111;
+  }
+  h2, h3 {
+    font-weight: 600;
+    line-height: 1.35;
+    color: #111;
+  }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 2rem 0 0.5rem; }
+  p {
+    margin: 1.25rem 0;
+    text-wrap: pretty;
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+  }
+  @media (max-width: 600px) {
+    p {
+      text-align: left;
+      hyphens: manual;
+    }
+  }
+  a {
+    color: #2f3437;
+    text-decoration: underline;
+    text-decoration-color: #bbb;
+    text-underline-offset: 2px;
+    transition: color 150ms ease, text-decoration-color 150ms ease;
+  }
+  a:hover {
+    filter: brightness(0.8);
+  }
+  a:focus-visible {
+    outline: 2px solid #999;
+    outline-offset: 2px;
+  }
+  .muted {
+    color: #787774;
+  }
+
+  /* Breadcrumb */
+  .crumbs {
+    font-size: 0.95rem;
+    color: #787774;
+    margin-bottom: 3.5rem;
+  }
+  .crumbs a {
+    color: #787774;
+    text-decoration-color: #ddd;
+  }
+  .crumbs .sep {
+    margin: 0 0.4rem;
+    color: #bbb;
+  }
+
+  /* Post list */
+  .posts {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+  }
+  .posts li {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 0 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .posts li:first-child {
+    border-top: 1px solid #eaeaea;
+  }
+  .posts time {
+    color: #787774;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.1rem;
+  }
+  .posts a {
+    text-decoration-color: transparent;
+  }
+  .posts a:hover {
+    text-decoration-color: #bbb;
+  }
+  @media (max-width: 600px) {
+    .posts li {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Post */
+  .post-header {
+    margin-bottom: 2rem;
+  }
+  .post-header time {
+    font-size: 0.95rem;
+    color: #787774;
+  }
+  .post-figure {
+    margin: 0 0 2.5rem;
+  }
+  .post-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+  }
+  .post-figure figcaption {
+    font-size: 0.9rem;
+    color: #787774;
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+  .post-figure figcaption a {
+    color: #787774;
+    text-decoration-color: #ddd;
+  }
+  .post-body > p:first-child {
+    margin-top: 0;
+  }
+  .post-body ul,
+  .post-body ol {
+    padding-left: 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .post-body li {
+    margin: 0.7rem 0;
+    padding-left: 0.3rem;
+    text-wrap: pretty;
+  }
+  .post-body ol li::marker {
+    color: #787774;
+    font-variant-numeric: tabular-nums;
+  }
+  .post-body ul li::marker {
+    color: #aaa;
+  }
+  .post-body h2#references {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #787774;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eaeaea;
+  }
+  .post-body h2#references + ul {
+    font-size: 0.95rem;
+    color: #5f5e5b;
+  }
+  .post-body blockquote {
+    margin: 1.5rem 0;
+    padding: 0 0 0 1.1rem;
+    border-left: 2px solid #e3e2df;
+    color: #5f5e5b;
+  }
+  .post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .post-body figure {
+    margin: 2rem 0;
+  }
+  .post-body figcaption {
+    font-size: 0.9rem;
+    color: #787774;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .post-body hr {
+    border: none;
+    border-top: 1px solid #eaeaea;
+    margin: 2.5rem 0;
+  }
+  code {
+    font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 0.86em;
+    background: #f1f1ef;
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+  }
+  pre {
+    background: #f4f4f2;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    overflow-x: auto;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.86em;
+  }
+  .post-body table {
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    display: block;
+    overflow-x: auto;
+  }
+  .post-body th,
+  .post-body td {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.4rem 0.9rem 0.4rem 0;
+    text-align: left;
+  }
+  .post-footer {
+    margin-top: 4rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.95rem;
+  }
+  .post-footer a {
+    color: #787774;
+    text-decoration-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<nav class="crumbs">
+  <a href="{{ '/' | relative_url }}">Home</a><span class="sep">/</span>{% if page.layout == 'post' %}<a href="{{ '/thoughts/' | relative_url }}">Thoughts</a>{% else %}Thoughts{% endif %}
+</nav>
+
+{{ content }}
+
+</body>
+</html>

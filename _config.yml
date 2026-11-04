@@ -1,0 +1,17 @@
+title: Cheng (Tony) Chang
+description: Writing by Cheng (Tony) Chang.
+url: https://chc012.github.io
+author: Cheng (Tony) Chang
+
+markdown: kramdown
+permalink: /thoughts/:title/
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: thoughts/feed.xml
+
+exclude:
+  - README.md
+  - CLAUDE.md
