@@ -9,7 +9,7 @@ It is possible to imagine different ways in which the Teleporter might work. A c
 
 The following statements follow immediately:
 
-- Teleporters would have a significant impact on humans as a civilization. Once a society adopts them, going back to a world without them would be catastrophic. *Hyperion* provides a good imagined scenario of a society that relied heavily on this technology <span class="spoiler" tabindex="0" title="Spoiler for Hyperion. Hover or tap to reveal">and lost it overnight</span>.[^doors]
+- Teleporters would have a significant impact on the human civilization. Once a society adopts them, going back to a world without them would be catastrophic. *Hyperion* provides a good imagined scenario of a society that relied heavily on this technology <span class="spoiler" tabindex="0" title="Spoiler for Hyperion. Hover or tap to reveal">and lost it overnight</span>.[^doors]
 - It leads to the philosophical problem of whether the person that comes out of the receptor is the same person that entered the sender. It is possible that the original is dead, and all we get is a copy of it in the sense of [Davidson's Swampman](https://en.wikipedia.org/wiki/Donald_Davidson_(philosopher)#Swampman).[^soulless] This should be an old point of debate for Star Trek fans.
 
 All of the above is probably old news. But what I think makes this scenario more interesting is the contention it displays between individual humans and *Human* as a society, or more narrowly, an economy. A *Human* that depends on Teleporters to function relies on humans that potentially die and are reborn every day, and the implication of this sounds like a metaphysical and moral disaster, and as such a disaster on the individual human level. But prohibiting the use of Teleporters due to this concern would significantly reduce the efficiency of *Human*, at least if *Human* is left without alternatives for extremely fast intergalactic travel.
@@ -25,5 +25,5 @@ All of this is a fairy tale, of course. We don't have the Teleporter and, for wh
 - Karl Marx, *Theses on Feuerbach* (1845).
 
 [^physics]: I have no idea if this is possible in a physics and engineering sense. The Teleporter is just a device for the thought experiment.
-[^doors]: I particularly enjoyed this example usage of Teleporters in the book: wealthy individuals may install Teleporters as doors of different rooms in their houses, such that different parts of their houses can be physically present on different planets.
+[^doors]: I particularly enjoyed this example that showcases the pervasive and inventive usage of Teleporters in *Hyperion*: wealthy individuals may install Teleporters as doors of different rooms in their houses, such that different parts of their houses can be physically present on different planets.
 [^soulless]: That is to say, potentially "soulless", whatever that means.
