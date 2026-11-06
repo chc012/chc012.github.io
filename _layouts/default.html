@@ -202,6 +202,52 @@
     border-top: 1px solid #eaeaea;
     margin: 3.5rem 0;
   }
+  /* Footnotes (kramdown) */
+  .post-body sup {
+    line-height: 0;
+  }
+  .post-body a.footnote {
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #787774;
+    padding: 0 0.1em;
+  }
+  .post-body .footnotes {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.95rem;
+    color: #5f5e5b;
+  }
+  .post-body h2#references + ul + .footnotes {
+    margin-top: 2rem;
+  }
+  .post-body .footnotes p {
+    margin: 0;
+    text-align: left;
+  }
+  .post-body a.reversefootnote {
+    text-decoration: none;
+    color: #aaa;
+    margin-left: 0.25em;
+  }
+
+  /* Spoilers: hidden until hovered, focused, or tapped */
+  .spoiler {
+    background: #2f3437;
+    color: transparent;
+    border-radius: 3px;
+    padding: 0 0.2em;
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease;
+  }
+  .spoiler:hover,
+  .spoiler:focus {
+    background: #f1f1ef;
+    color: inherit;
+    outline: none;
+  }
+
   code {
     font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
     font-size: 0.86em;
