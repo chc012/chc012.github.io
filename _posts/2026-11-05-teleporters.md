@@ -20,9 +20,9 @@ All of this is a fairy tale, of course. We don't have the Teleporter and, for wh
 
 ## References
 
-- Dan Simmons, *Hyperion*.
-- Donald Davidson, "Knowing One's Own Mind".
-- Karl Marx, *Theses on Feuerbach*.
+- Dan Simmons, *Hyperion* (1989).
+- Donald Davidson, "Knowing One's Own Mind" (1987).
+- Karl Marx, *Theses on Feuerbach* (1845).
 
 [^physics]: I have no idea if this is possible in a physics and engineering sense. The Teleporter is just a device for the thought experiment.
 [^doors]: I particularly enjoyed this example usage of Teleporters in the book: wealthy individuals may install Teleporters as doors of different rooms in their houses, such that different parts of their houses can be physically present on different planets.

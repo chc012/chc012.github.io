@@ -34,4 +34,4 @@ To clarify, the intention here is not to cast a moral shadow upon this phenomeno
 
 ## References
 
-- Marshall Berman, *All That Is Solid Melts into Air*.
+- Marshall Berman, *All That Is Solid Melts into Air* (1982).
