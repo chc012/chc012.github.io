@@ -16,7 +16,7 @@ All of the above is probably old news. But what I think makes this scenario more
 
 Therefore, if the future *Human* that obtains this technology does not hold individual human lives in much higher regard than its natural tendency toward economic growth, expansion, and efficiency, it is quite imaginable that *Human* would uphold the use of Teleporters as a lesser evil, and thus redefine the meaning of being a human, potentially for the worse for individual humans. This seems to resonate with Marx's famous statement that "the essence of man" is not an "abstraction inherent in each single individual", but "the ensemble of the social relations" amongst humans.
 
-All of these are fairy tales, of course. We don't have the Teleporter and, for what it's worth, may never have it. But if we allow for some reverse extrapolation here, this line of thought suggests that a life-changing technological advancement, if coupled with a *Human* society that does not align its values and intentions well with those of individual humans, can be a philosophical, moral, and physical disaster for humans. The relevance, therefore, is self-explanatory in this day and age.
+All of these are fairy tales, of course. We don't have the Teleporter and, for what it's worth, may never have it. But if we allow for some reverse extrapolation here, this line of thought suggests that a life-changing technological advancement, if coupled with a *Human* society that does not align its values and intentions well with those of individual humans, can be a philosophical, moral, and physical disaster for humans. The relevance, therefore, is hopefully self-explanatory in this day and age.
 
 ## References
 
